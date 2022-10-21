@@ -40,10 +40,6 @@ ul {
   line-height: 1.15;
   letter-spacing: 0.02em;
 }
-.link:hover,
-.link:focus {
-  color: #2196f3;
-}
 
 .benefits-list,
 .services-list,
@@ -75,16 +71,16 @@ img {
 .logo-word {
   color: #2196f3;
 }
-
+.logo-word-footer {
+  color: #fff;
+}
 /* -------------- Header --------------- */
 .header .logo {
   margin-right: 93px;
   padding-top: 20px;
   padding-bottom: 20px;
 }
-.logo-word-footer {
-  color: #fff;
-}
+
 .site-nav {
   display: flex;
   margin-right: 318px;
@@ -99,6 +95,9 @@ img {
   padding-bottom: 32px;
 
   color: #212121;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .site-nav .link.current {
   position: relative;
@@ -118,14 +117,21 @@ img {
 .site-nav .link:hover,
 .site-nav .link:focus {
   color: #2196f3;
+  transform: color;
 }
 .link.contacts {
   color: #757575;
+
+  transition-property: color, fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contacts-list .link.contacts:hover,
 .contacts-list .link.contacts:focus {
   color: var(--focus-hover-collor);
   fill: var(--focus-hover-collor);
+
+  transform: color, fill;
 }
 .contacts-list {
   display: flex;
@@ -224,6 +230,10 @@ img {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
   z-index: 200;
+
+  /* transition-property: background-color, scale;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
 }
 .backdrop.is-hidden {
   visibility: 0;
