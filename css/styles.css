@@ -133,7 +133,14 @@ img {
   align-items: center;
 }
 .header-box {
+  position: fixed;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fff;
+  width: 100%;
+  
   border-bottom: 1px solid #ececec;
+
 }
 .contacts-list .link.contacts {
   display: flex;
