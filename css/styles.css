@@ -237,6 +237,22 @@ img {
   border-radius: 4px;
   z-index: 300;
 }
+.modal .close-icon-box {
+  position: absolute;
+  display: inline-flex;
+  width: 30px;
+  height: 30px;
+  top: 8px;
+  right: 8px;
+  justify-content: center;
+  align-items: center;
+
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+
+  cursor: pointer;
+}
 
 /* ------------- Benefits section --------- */
 
