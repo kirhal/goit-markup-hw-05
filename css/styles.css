@@ -231,26 +231,30 @@ img {
   background-color: rgba(0, 0, 0, 0.2);
   z-index: 200;
 
-  /* transition-property: background-color, scale;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .backdrop.is-hidden {
   visibility: 0;
   opacity: 0;
   pointer-events: none;
 }
+
 .modal {
   position: fixed;
   width: 528px;
   height: 581px;
   top: 221px;
   left: calc(100% / 2 - 264px);
+  overflow-y: auto;
+
   background: #ffffff;
+
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 }
+
 .modal .close-icon-box {
   position: absolute;
   display: inline-flex;
@@ -500,7 +504,7 @@ img {
 }
 .contacts.footer {
   color: rgba(255, 255, 255, 0.6);
-  
+
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -570,7 +574,7 @@ img {
   padding: 6px 25px;
 
   background-color: #f5f4fa;
-  
+
   border-radius: 4px;
   border: 0;
   cursor: pointer;
@@ -581,7 +585,7 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
 
-  transition-property: color, background-color, box-shadow ;
+  transition-property: color, background-color, box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -679,6 +683,6 @@ img {
 .example-list .item:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
-    
+
   transform: box-shadow;
 }
