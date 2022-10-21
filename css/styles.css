@@ -289,7 +289,7 @@ img {
 
   background-color: rgba(47, 48, 58, 0.8);
 }
-.services-list .disc {
+.services-list .desc {
   margin: auto;
 
   color: var(--icons-focus-collor);
@@ -540,10 +540,28 @@ img {
   margin-right: 0px;
 }
 .example-list .item {
+  position: relative;
   margin-bottom: 30px;
+  /* overflow: hidden; */
 }
 .example-list .item:nth-last-child(-n + 3) {
   margin-bottom: 0px;
+}
+.example-list .block {
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+.overlay {
+  position: absolute;
+  z-index: 0;
+  height: 294px;
+  width: 100%;
+  top: 0;
+  left: 0;
+
+  background-color: rgba(33, 150, 243, 0.9);
+  transform: translateY(100%);
 }
 .example-list .subject {
   padding: 20px 24px;
