@@ -409,13 +409,19 @@ img {
   justify-content: center;
   align-items: center;
 
+  background-color: #fff;
   fill: var(--icons-color);
+  transition-property: fill, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .socials-list .links:hover,
 .socials-list .links:focus {
   fill: var(--icons-focus-collor);
   background-color: var(--focus-hover-collor);
+
+  transform: fill, background-color;
 }
 /* ------------- Clients section ----------- */
 .section.clients {
@@ -442,7 +448,7 @@ img {
   justify-content: center;
   align-items: center;
   border-radius: 4px;
-  
+
   fill: var(--icons-color);
   border: 1px solid var(--icons-color);
   transition-property: border, fill;
@@ -475,28 +481,40 @@ img {
 .link.address {
   margin-bottom: 20px;
 
-  font-style: normal;
   color: #fff;
+
+  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .link.address:hover,
 .link.address:focus {
   color: #2196f3;
+  transform: color;
 }
 .contacts.footer {
   color: rgba(255, 255, 255, 0.6);
+  
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .link.contacts.footer:hover,
 .link.contacts.footer:focus {
   color: var(--focus-hover-collor);
+  transform: color;
 }
 .footer .logo {
   display: inline-block;
